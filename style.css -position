@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.치료::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.전체 {
+    position: relative;
+    background-color: grey;
+    width: 600px;
+    border: 5px solid black;
+    margin-left: 100px;
+    margin-top: 200px;
+
+}
+
+.전체>div {
+    width: 150px;
+    height: 150px;
+
+}
+
+.전체 .pink {
+    background-color: pink;
+    position: static;
+    /* 기본값 ! */
+
+}
+
+.전체 .green {
+    background-color: greenyellow;
+    position: relative;
+    /* 원래 자신의 위치를 기억하면서 움직임
+주위에 영향을 주지않고 움직인다 */
+    left: 250px;
+    top: 50px;
+    /*left의 명령값은 기본 위치에서 왼쪽.  
+top적용기준이 기억한자리에서부터 적용됨 */
+}
+
+.전체 .red {
+    background-color: red;
+    position: absolute;
+    /* ablsolute 포지셔닝과 동시에 원래가진 본인의 영역을 잃어버림(aka구ㅣ신)
+    같이 붙여가려면 div전체에 relative를 잡아줘야 따로 놀지 않는다. relative없이는 body기준에 맞추어서 적용됨.  */
+    left: 100px;
+    top: 100px;
+}
+
+.전체 .blue {
+    background-color: blue;
+    position: fixed;
+    /* (고정메뉴! ) */
+    right: 150px;
+    top: 150px;
+}
+
+
+
+
+
+.영역 {
+    margin-top: 50px;
+    background-color: grey;
+    border: 5px solid black;
+    width: 1000px;
+    margin: 50px auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.영역>div {
+    background-color: green;
+    width: 49%;
+    float: left;
+    height: 300px;
+
+}
+
+.영역>div.포지션1 {
+    position: relative;
+    margin-right: 2%;
+    overflow: hidden;
+}
+
+.영역>div.포지션1 .포자
+{background-color: pink;
+height: 0%;
+width: 0%;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: (-50%,-50%);
+/* transform: translate(x축,y축): 적용되는 %의 기준점이  자기자신임.; */
+transition: 0.9s;
+}
+
+.영역>div.포지션1:hover .포자
+{
+height: 120%;
+width: 120%;
+
+}
+
+
+.space {
+    height: 2000px;
+}
