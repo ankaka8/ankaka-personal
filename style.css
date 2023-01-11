@@ -1,82 +1,12 @@
+@charset "UFT-8";
 
-@charset "UTF-8";
-
-*{margin: 0;padding: 0;}
-ul,li{list-style:none;}
-/* --->앞에 점 빼는법 */
-
-.wrap{}
-
-.wrap .container{
-    width: 800px;
-    margin: 0 auto;
-
-}
-
-.wrap .container .slick .slick-slide{
-    height: 400px;
-
-}
-
-.wrap .container .slick .slick-slide img{
-    width: 100%;
-
-}
-.wrap .container .slick .slick-arrow{
-    /* Slick botton 수기로 만드는법 arrow는 pre next같이 부름*/
-
-position: absolute;
-top: 50%;transform: translateY(-50%);
-font-size: 0;
-visibility: hidden;
-/* visibility =숨기기기능 */
-}
-.wrap .container .slick .slick-prev{
-z-index: 10;
-left: 10%;
-}
-.wrap .container .slick .slick-prev::after{
-
-content: "\f060";
-font-family: "Font Awesome 5 Free";
-font-weight: 900;
-visibility: visible;
-font-size: 45px;
-color: rgb(244, 248, 244);
-}   
-
-.wrap .container .slick .slick-next{
-right: 10%;
-}
-.wrap .container .slick .slick-next::after{
-    content: "\f061";
-    font-family: "Font Awesome 5 Free";
+.section::after{
+    content: "\f535";
+    /* fontawesome에서 아이콘 개발자모드로 클릭해서 class i before에서 content code복사 */
+    font-family: "Font Awesome 5 free";
+                                 /* pro지우고 free로 바꿀것  */
     font-weight: 900;
-    visibility: visible;
-    font-size: 45px;
-    color: rgb(250, 248, 248);
-    }   
-   .wrap .container .slick .slick-dots{
-    text-align: center;
-   }
-   .wrap .container .slick .slick-dots li{
-    display: inline;
-    /* 인라인의 요소는 패딩과 마진의 좌우는 적용되지만 상하는안됨 */
-    margin:0 5px; 
-   }
-   .wrap .container .slick .slick-dots li button{
-    font-size: 0;
-    border: none;
-    width: 13px; height: 13px;
-    background-color: #333;
-    border-radius: 50%;
-    transition: 0.3s;
 
-   }
-   .wrap .container .slick .slick-dots li.slick-active button{
-    background-color: red;
-    width: 20px;
-    border-radius: 10px;
-    
-
-   }
+    i열 
+/* }fa, fa.에 font family, font weight복사해서 오기(꼭) */
+}
