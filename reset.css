@@ -1,0 +1,16 @@
+@charset "UTF-8"; 
+
+/* 여백초기화 */
+body,div.dl,dd,dt,li,ol,h1,h2,h3,h4,h5,h6,form,input,legend,textarea,select,fieldset,p,button{margin: 0; padding: 0;}
+
+/* 링크초기화 */
+a{text-decoration: none; color: black;}
+v
+
+
+/* 폰트초기화하는법 */
+
+
+body, inputm textarea,select,button,table{
+    font-family: 'Noto Sans KR','나눔고딕','Nanum Gothinc','Malun Gothic', '맑은고딕', '돋움',sans-serif;
+}

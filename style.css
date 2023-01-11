@@ -1,12 +1,9 @@
-@charset "UFT-8";
+@charset  "UFT-8";
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
-.section::after{
-    content: "\f535";
-    /* fontawesome에서 아이콘 개발자모드로 클릭해서 class i before에서 content code복사 */
-    font-family: "Font Awesome 5 free";
-                                 /* pro지우고 free로 바꿀것  */
-    font-weight: 900;
-
-    i열 
-/* }fa, fa.에 font family, font weight복사해서 오기(꼭) */
+h2{}
+h3{font-size: 30px;
+    font-family: 'Hana B';
 }
+/* font-family: 'Noto Sans KR', sans-serif;/ */
