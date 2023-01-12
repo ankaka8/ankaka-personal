@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <!-- slick cdn css min ver  반드시 style css 위에 입력-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+
+        <title>slick slick</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="main">
+            <div class="your-class">
+                <div calss="s1">
+                    <video autoplay muted controls source
+                        src="http://h.vod.cgv.co.kr:80/vodCGVa/86720/86720_210819_1200_128_960_540.mp4"
+                        deletecommandtype="video/mp4"></video> </div>
+                <div class="s2"><video autoplay muted controls source
+                        src="http://h.vod.cgv.co.kr:80/vodCGVa/86720/86720_211023_1200_128_960_540.mp4"
+                        deletecommandtype="video/mp4"></video> </div>
+                <div class="s3"><video autoplay muted controls source
+                        src="http://h.vod.cgv.co.kr:80/vodCGVa/86720/86720_210669_1200_128_960_540.mp4"
+                        deletecommandtype="video/mp4"> </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- jquery는 반드시 닫는 bpdy위에 입력 (버전1 ) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- min js 는 slick에 맨 위에 배포된 것 copy해서 jquery아랫단에 반드시 입력 -->
+    <script>
+        $(document).ready(function () {
+            $('.your-class').slick({autopay:true,dots:true,fade:true,});
+        });
+        // slick에서 설정코드 잡고 setting 외 기타옵션 날리기
+    </script>
+</body>
+
+</html>
